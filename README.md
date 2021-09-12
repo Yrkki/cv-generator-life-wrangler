@@ -1,8 +1,8 @@
 # Life Wrangler
 
-Ingester for the LifeSpan family of products
+Ingester for the LifeSpan℠. family of products
 
-ETL job for the LifeSpan Life Store SSOT provisioning solution for use with the CV Generator
+ETL job for the LifeSpan℠. Life Store SSOT provisioning solution for use with the CV Generator
 
 ---
 

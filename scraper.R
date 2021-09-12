@@ -1,4 +1,4 @@
-# ETL job for the LifeSpan Life Store SSOT provisioning solution for use with the CV Generator
+# ETL job for the LifeSpan℠. Life Store SSOT provisioning solution for use with the CV Generator
 
 # Configuration
 options("encoding" = "UTF-8")
@@ -21,6 +21,12 @@ ranges <- geometry$reference
 files <- geometry$file_out
 row_removes <- geometry$row_remove
 
+# date type checker
+is.date <- function(x) inherits(x, c("Date", "POSIXt"))
+
+# date formatter
+date_formatter <- function (d) as.numeric(d)/3600/24 + 25569
+
 # Apply extractor function to all sheets in geometry, with parameters
 xl_list <- mapply(function(sheet, range, file, row_remove) {
   xl_sheet <- read_excel(path = path, sheet = sheet, range = range)
@@ -31,6 +37,7 @@ xl_list <- mapply(function(sheet, range, file, row_remove) {
   # head(xl_sheet[1])
   # # data.frame(xl_sheet)
   # xl_sheet %>% knitr::kable()
+  xl_sheet <- xl_sheet %>% mutate_if(is.date, date_formatter)
   json <- jsonlite::toJSON(xl_sheet, pretty = TRUE, Date = "ISO8601")
   json <- str_replace_all(json, "\\\\r\\\\n", "\\\\n")
   # json <- trimws(json)
