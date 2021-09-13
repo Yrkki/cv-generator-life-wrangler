@@ -6,4 +6,4 @@ ETL job for the LifeSpan℠. Life Store SSOT provisioning solution for use with 
 
 ---
 
-© 1984 – 2021 [Marinov](http://marinov.ml "Marinov"). All rights reserved
+© 1984 – 2021 [Marinov](http://marinov.ml "Marinov"). All rights reserved.
