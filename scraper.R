@@ -7,8 +7,10 @@ library(readxl)
 library(jsonlite)
 
 # Locations
-in_path <- "C:\\Users\\Jorich\\Dropbox\\Career\\CVs\\"
-out_path <- "C:\\Users\\Jorich\\source\\repos\\cv-generator\\cv-generator-life-store\\public\\json\\"
+app_data <- Sys.getenv("USERPROFILE")
+app_data <- paste0(app_data, "\\")
+in_path <- paste0(app_data, "Dropbox\\Career\\CVs\\")
+out_path <- paste0(app_data, "source\\repos\\cv-generator\\cv-generator-life-store\\public\\json\\")
 path <- paste0(in_path, "CV.xlsx")
 
 # Extract data geometry
