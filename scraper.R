@@ -1,5 +1,8 @@
 # ETL job for the LifeSpan℠. Life Store SSOT provisioning solution for use with the CV Generator
 
+# Installation
+if(!require(tidyverse)) install.packages("tidyverse", repos = "http://cran.us.r-project.org")
+
 # Configuration
 options("encoding" = "UTF-8")
 library(tidyverse)
