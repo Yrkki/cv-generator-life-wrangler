@@ -1,9 +1,9 @@
-# Life Wrangler
+# Wrangler
 
-Ingester for the LifeSpan℠. family of products
+![Wrangler](https://github.com/Yrkki/cv-generator-life-logo/blob/master/favicon/cv-generator-life-wrangler/favicon/favicon.ico?raw=true)
 
-ETL job for the LifeSpan℠. Life Store SSOT provisioning solution for use with the CV Generator
+Scrape wrangling ETL job for the Store SSOT storage solution of the LifeSpan℠ ecosystem
 
 ---
 
-© 1984 – 2021 [Marinov](http://marinov.ml "Marinov"). All rights reserved.
+© 2021 [Marinov](http://marinov.link "Marinov"). All rights reserved.
