@@ -26,7 +26,7 @@ out_path <- paste0(
 path <- paste0(in_path, "CV.xlsx")
 
 # Extract data geometry
-geometry <- read_excel(path = path, sheet = "Geometry", range = "A1:H10")
+geometry <- read_excel(path = path, sheet = "Geometry")
 geometry
 
 # Prepare parameters
